@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2eada; /* parchment color */
+        }
+
+        .scroll-container {
+            width: 500px; /* Increase width */
+            height: 400px; /* Increase height */
+            overflow: hidden; /* hide the scrollbar */
+            position: relative;
+            border: none; /* remove border */
+            background: url('scroll_background.jpg') center center / cover no-repeat; /* replace with your scroll image */
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* inner shadow effect */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .scroll-content {
+            width: 90%; /* Adjust width */
+            height: 90%; /* Adjust height */
+            padding: 20px;
+            color: #000; /* text color */
+            line-height: 1.6; /* line spacing */
+            text-align: justify; /* justify text for better appearance */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure text is above other elements */
+            animation: scroll 20s linear infinite; /* scroll animation */
+        }
+
+        /* Keyframes for scroll animation */
+        @keyframes scroll {
+            from { top: 0; }
+            to { top: -100%; }
+        }
+
+        .lion-sigil {
+            width: 50px; /* adjust size as needed */
+            height: auto; /* maintain aspect ratio */
+            margin-bottom: 10px; /* add some space between the sigil and text */
+        }
+
+        h1 {
+            font-family: 'Trajan Pro', serif; /* Change font to Trajan Pro */
+        }
+    </style>
+    <!-- Include Trajan Pro font -->
+    <link href="https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <!-- Your scroll content goes here -->
+            <h1>Letter from shivesh!</h1>
+            <p>My Dearest Lioness,</p>
+            <p>As the sun ascends the heavens on this auspicious day, I am filled with jubilation and reverence, for today marks the anniversary of your arrival into this world. On this day, I offer you my all love and wishes, my beloved.</p>
+            <p>You, my lioness, are a lioness of the heart, a paragon of strength, grace, and beauty. Your spirit burns bright as the sun, illuminating the path we tread together. In your gaze, I find solace, in your embrace, courage, and within you, the song of my heart finds its melody.</p>
+            <p>On this day of celebration, may  joy dance in your eyes, laughter sing in your heart, and love adorn your every step. . And may our bond, like the valiant knights of old, stand as an unyielding fortress against the trials of time.</p>
+            <p>Happy name day, my lioness. Thank you for gracing my life with your presence, for in your light, I find my true north, my guiding star. Here's to countless more moons, each one a testament to the enduring strength of our bond.</p>
+            <p>With all the love in my heart,</p>
+            <p>[Your Lion ]</p>
+            <!-- End of scroll content -->
+        </div>
+        <img src="lion_sigil.png" alt="Lion Sigil" class="lion-sigil">
+    </div>
+</body>
+</html>
